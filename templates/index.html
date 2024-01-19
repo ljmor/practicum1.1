@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="icon" type="image/png" href="../static/assets/icon.png">
+    <title>Practicum 1.1</title>
+</head>
+<body>
+<header>
+    <h1>Consulta a base de datos</h1>
+</header>
+<main>
+    <label for="tabla"> Tabla a elegir:
+        <select id="tabla">
+            <option value="" disabled selected>Selecciona una opción</option>
+            <option value="awayteams">Away Teams</option>
+            <option value="hometeams">Home Teams</option>
+            <option value="goals">Goals</option>
+            <option value="matches">Matches</option>
+            <option value="players">Players</option>
+            <option value="squads">Squads</option>
+            <option value="stadiums">Stadiums</option>
+            <option value="tournaments">Tournaments</option>
+        </select>
+    </label>
+
+    <div id="loading">
+        <img src="../static/assets/loading.gif"/>
+    </div>
+
+    <div id="datos"></div>
+
+</main>
+<footer>
+    <p>Desarrollado por Luis Mora y Renato Rojas - 2023</p>
+</footer>
+
+<script src="../static/script.js"></script>
+
+</body>
+</html>
